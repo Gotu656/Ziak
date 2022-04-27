@@ -106,6 +106,62 @@ _G.on = false
         
     end
 end)
+local Tab     = Window:NewTab("Noting")
+local Section = Tab:NewSection("Nothing")
+Section:NewToggle("Nothing", "Why", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait()
+
+wait(0.2)
+local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+wait(0.2)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
+
+local Tab     = Window:NewTab("Dupe")
+local Section = Tab:NewSection("Dupe")
+
+Section:NewToggle("Auto Dupe Banana", "Dupe", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait()
+
+wait(0.2)
+local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+        local args = {
+        [1] = "The banana"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+wait(0.2)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
 local Tab     = Window:NewTab("Buy")
 local Section = Tab:NewSection("Buy")
 Section:NewToggle("Auto Buy Bananas", "NFT", function(state)
