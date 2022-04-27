@@ -180,6 +180,31 @@ Section:NewButton("Drop Bens", "Drop", function()
     local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
     Event:FireServer(A_1)
 end)
+Section:NewToggle("Auto Drop Bens", "Drop", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait()
+
+wait(0.2)
+local args = {
+        [1] = "Trading Ben"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Equip:FireServer(unpack(args))
+        local args = {
+        [1] = "Trading Ben"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.Drop:FireServer(unpack(args))
+
+wait(0.2)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
 
 
 
@@ -194,6 +219,69 @@ end)
 Section:NewButton("Popblox hub", "Others", function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tom13122331/LuaSource/main/Chris"),true))()
 end)
+local Section = Tab:NewSection("Idk what is it")
+Section:NewButton("Tall script", "Help", function()
+--body sizes: BodyHeightScale: 105%
+--            BodyWidthScale: 100%
+--            HeadScale: 100%
+--            BodyProportionScale: 0%
+--            AvatarPartScaleType: 100%
+
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+function rm()
+    for i,v in pairs(Character:GetDescendants()) do
+        if v:IsA("BasePart") then
+            if v.Name == "Handle" or v.Name == "Head" then
+                if Character.Head:FindFirstChild("OriginalSize") then
+                    Character.Head.OriginalSize:Destroy()
+                end
+            else
+                for i,cav in pairs(v:GetDescendants()) do
+                    if cav:IsA("Attachment") then
+                        if cav:FindFirstChild("OriginalPosition") then
+                            cav.OriginalPosition:Destroy()  
+                        end
+                    end
+                end
+                v:FindFirstChild("OriginalSize"):Destroy()
+                if v:FindFirstChild("AvatarPartScaleType") then
+                    v:FindFirstChild("AvatarPartScaleType"):Destroy()
+                end
+            end
+        end
+    end
+end
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("HeadScale"):Destroy()
+wait(1)
+end)
+
 local Section = Tab:NewSection("Crash need a auto clicker!")
 Section:NewButton("Crash server", "Others", function()
     local args = {
@@ -202,6 +290,7 @@ Section:NewButton("Crash server", "Others", function()
 
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
+
 
 Section:NewToggle("Crash auto", "Others", function(state)
     if state then
