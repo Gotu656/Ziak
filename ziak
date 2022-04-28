@@ -7,6 +7,12 @@ local Section = Tab:NewSection("Auto Anti reap")
 local Section = Tab:NewSection("Auto Crasher need money")
 local Tab     = Window:NewTab("Buy Nft")
 local Section = Tab:NewSection("NFT")
+Section:NewKeybind("Close F open F", "Close F open F", Enum.KeyCode.F, function()
+    Library:ToggleUI()
+end)
+
+
+
 Section:NewButton("Buy Ben", "Buy Ben", function()
     local args = {
         [1] = "Trading Ben"
@@ -108,7 +114,7 @@ _G.on = false
 end)
 local Tab     = Window:NewTab("Noting")
 local Section = Tab:NewSection("Nothing")
-Section:NewToggle("Nothing", "Why", function(state)
+Section:NewToggle("Don't touch", "Why", function(state)
     if state then
 _G.on = true
 
@@ -491,6 +497,47 @@ local args = {
         [1] = "Amogus Rainbow"
     }
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+
+local Section = Tab:NewSection("????")
+Section:NewButton("Platform 1", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(221.47657775878906, 26.799846649169922, -208.41799926757812))
+end)
+Section:NewButton("Platform 2", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(180.80093383789062, 26.977828979492188, -207.95724487304688))
+end)
+Section:NewButton("Platform 3", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(140.62301635742188, 26.799846649169922, -208.29974365234375))
+end)
+Section:NewButton("Platform 4", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(100.86707305908203, 26.833974838256836, -207.85250854492188))
+end)
+Section:NewButton("Platform 5", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(61.505615234375, 26.046207427978516, -208.05682373046875))
+end)
+Section:NewButton("Platform 6", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(21.02322769165039, 26.33940887451172, -208.15704345703125))
+end)
+Section:NewButton("Platform 7", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-18.90589714050293, 26.762311935424805, -208.4942626953125))
+end)
+Section:NewButton("Platform 1(left)", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(221.38113403320312, 26.967214584350586, -327.77911376953125))
+end)
+Section:NewButton("Platform 2(left)", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(181.052978515625, 26.721370697021484, -327.0597839355469))
+end)
+Section:NewButton("Platform 3(left)", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(140.8793182373047, 26.523544311523438, -326.21429443359375))
+end)
+Section:NewButton("Platform 4(left)", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(101.48982238769531, 26.046207427978516, -327.08953857421875))
+end)
+Section:NewButton("Platform 5(left)", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(20.794857025146484, 25.79054069519043, -327.5013122558594))
+end)
+Section:NewButton("Platform 6(left)", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-18.6514835357666, 26.97749900817871, -326.1947021484375))
 end)
 
 local Tab     = Window:NewTab("Anti-Reaper")
