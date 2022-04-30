@@ -1,6 +1,6 @@
 --Made by Tom
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tom13122331/Hub/main/Hub"))()
-local Window  = Library.CreateLib("Teddy Hub", "Midnight")
+local Window  = Library.CreateLib("Floppa (teddy) Hub", "Midnight")
 local Tab     = Window:NewTab("Update")
 local Section = Tab:NewSection("Update")
 local Section = Tab:NewSection("Auto Anti reap")
