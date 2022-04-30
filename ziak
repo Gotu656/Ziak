@@ -3,7 +3,8 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tom13
 local Window  = Library.CreateLib("Teddy Hub", "Midnight")
 local Tab     = Window:NewTab("Update")
 local Section = Tab:NewSection("Update")
-local Section = Tab:NewSection("You can auto buy floppa!")
+local Section = Tab:NewSection("Auto Anti reap")
+local Section = Tab:NewSection("Auto Crasher need money")
 local Tab     = Window:NewTab("Buy Nft")
 local Section = Tab:NewSection("NFT")
 Section:NewKeybind("Close F open F", "Close F open F", Enum.KeyCode.F, function()
@@ -323,6 +324,18 @@ _G.on = false
         
     end
 end)
+Section:NewButton("dupe bananas", "Buy Mommeh Long Legs", function()
+    local args = {
+        [1] = "The banana"
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+    local args = {
+        [1] = "The banana"
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
 Section:NewToggle("Auto Dupe Pop It Rainbow", "Dupe", function(state)
     if state then
 _G.on = true
@@ -347,6 +360,18 @@ wait(0.2)
 _G.on = false
         
     end
+end)
+Section:NewButton("dupe Pop It Rainbow", "Buy Mommeh Long Legs", function()
+    local args = {
+        [1] = "Pop It Rainbow!"
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+    local args = {
+        [1] = "Pop It Rainbow!"
+    }
+
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 
 
