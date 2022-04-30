@@ -1,20 +1,19 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tom13122331/Hub/main/Hub"))
+--Made by Tom
+if game.PlaceId == 7346416636 then
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tom13122331/Hub/main/Hub"))()
 local Window  = Library.CreateLib("Teddy Hub", "Midnight")
 local Tab     = Window:NewTab("Update")
 local Section = Tab:NewSection("Update")
 local Section = Tab:NewSection("Auto Anti reap")
 local Section = Tab:NewSection("Auto Crasher need money")
-local Tab     = Window:NewTab("Credis")
-local Section = Tab:NewSection("Credis")
-local Section = Tab:NewSection("Scipter:Teddy")
-local Section = Tab:NewSection("Designing:Chris")
-local Section = Tab:NewSection("Discord:https://discord.gg/az7vxnSB")
-local Section = Tab:NewSection("Popblox©2022")
 local Tab     = Window:NewTab("Buy Nft")
 local Section = Tab:NewSection("NFT")
 Section:NewKeybind("Close F open F", "Close F open F", Enum.KeyCode.F, function()
     Library:ToggleUI()
 end)
+
+
+
 Section:NewButton("Buy Ben", "Buy Ben", function()
     local args = {
         [1] = "Trading Ben"
@@ -757,12 +756,10 @@ Section:NewButton("Buy watermelon", "Anti-Reap", function()
     }
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
-elseif game.PlaceId == 8377686524 then
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gotu656/Ziak/main/EZBOZO"))()
-local Window  = Library.CreateLib("Teddy Hub", "Midnight")
-end
-end)
-local Tab     = Window:NewTab("Main")
-local Section = Tab:NewSection("Idk")
 
-Section:NewButton("Not ur hub for this one!", "Others", function()
+local Tab     = Window:NewTab("Credis")
+local Section = Tab:NewSection("Credis")
+local Section = Tab:NewSection("Scipter:Teddy")
+local Section = Tab:NewSection("Designing:Chris")
+local Section = Tab:NewSection("Discord:https://discord.gg/az7vxnSB")
+local Section = Tab:NewSection("Popblox©2022")
