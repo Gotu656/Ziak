@@ -1,5 +1,4 @@
---Made by Tom
-if game.PlaceId == 7346416636 then
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tom13122331/Hub/main/Hub"))()
 local Window  = Library.CreateLib("Teddy Hub", "Midnight")
 local Tab     = Window:NewTab("Update")
