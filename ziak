@@ -3,9 +3,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tom13
 local Window  = Library.CreateLib("Teddy Hub", "Midnight")
 local Tab     = Window:NewTab("Update")
 local Section = Tab:NewSection("Update")
-local Section = Tab:NewSection("Floppa.")
-local Section = Tab:NewSection("idk what to do next")
-
+local Section = Tab:NewSection("You can auto buy floppa!")
 local Tab     = Window:NewTab("Buy Nft")
 local Section = Tab:NewSection("NFT")
 Section:NewKeybind("Close F open F", "Close F open F", Enum.KeyCode.F, function()
@@ -66,7 +64,7 @@ wait(0.2)
 local args = {
         [1] = "Munneh"
     }
-    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         local args = {
         [1] = "Munneh"
     }
@@ -99,7 +97,7 @@ wait(0.2)
 local args = {
         [1] = "Mommeh Long Legs"
     }
-    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         local args = {
         [1] = "Mommeh Long Legs"
     }
@@ -168,9 +166,7 @@ _G.on = false
         
     end
 end)
-local Tab     = Window:NewTab("Floppa")
-local Section = Tab:NewSection("Buy")
-Section:NewToggle("Floppa", "Que Pro", function(state)
+Section:NewToggle("Auto Buy Floppa", "NFT", function(state)
     if state then
 _G.on = true
 
@@ -296,132 +292,7 @@ _G.on = false
     end
 end)
 
-local Section = Tab:NewSection("Dupe")
-Section:NewToggle("Floppa", "Que Pro", function(state)
-    if state then
-_G.on = true
 
-while _G.on == true do
-    wait()
-
-wait(0.2)
-local args = {
-        [1] = "Floppa"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
-        local args = {
-        [1] = "Floppa"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-
-wait(0.2)
-
-    end
-    else
-_G.on = false
-        
-    end
-end)
-Section:NewToggle("Ms Floppa", "Idk", function(state)
-    if state then
-_G.on = true
-
-while _G.on == true do
-    wait()
-
-wait(0.2)
-local args = {
-        [1] = "Ms Floppa"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
-        local args = {
-        [1] = "Ms Floppa"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-
-wait(0.2)
-
-    end
-    else
-_G.on = false
-        
-    end
-end)
-Section:NewToggle("Bingus", "Only 20 is nothing", function(state)
-    if state then
-_G.on = true
-
-while _G.on == true do
-    wait()
-
-wait(0.2)
-local args = {
-        [1] = "Bingus"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
-        local args = {
-        [1] = "Bingus"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-
-wait(0.2)
-
-    end
-    else
-_G.on = false
-        
-    end
-end)
-Section:NewToggle("Baby Floppa", "Why", function(state)
-    if state then
-_G.on = true
-
-while _G.on == true do
-    wait()
-
-wait(0.2)
-local args = {
-        [1] = "Baby Floppa"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
-        local args = {
-        [1] = "Baby Floppa"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-
-wait(0.2)
-
-    end
-    else
-_G.on = false
-        
-    end
-end)
-Section:NewToggle("cat thing", "Why", function(state)
-    if state then
-_G.on = true
-
-while _G.on == true do
-    wait()
-
-wait(0.2)
-local args = {
-        [1] = "Litter Box"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
-        local args = {
-        [1] = "Litter Box"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-
-wait(0.2)
-
-    end
-    else
-_G.on = false
-        
-    end
-end)
 local Tab     = Window:NewTab("Dupe")
 local Section = Tab:NewSection("Dupe")
 
