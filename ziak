@@ -105,33 +105,7 @@ _G.on = false
         
     end
 end)
-local Tab     = Window:NewTab("Noting")
-local Section = Tab:NewSection("Nothing")
-Section:NewToggle("Don't touch", "Why", function(state)
-    if state then
-_G.on = true
 
-while _G.on == true do
-    wait()
-
-wait(0.2)
-local args = {
-        [1] = "Rainbow Flag"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-        local args = {
-        [1] = "Rainbow Flag"
-    }
-    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-
-wait(0.2)
-
-    end
-    else
-_G.on = false
-        
-    end
-end)
 
 local Tab     = Window:NewTab("Buy")
 local Section = Tab:NewSection("Buy")
@@ -274,6 +248,31 @@ local args = {
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         local args = {
         [1] = "Litter Box"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+wait(0.2)
+
+    end
+    else
+_G.on = false
+        
+    end
+end)
+Section:NewToggle("Don't touch", "Why", function(state)
+    if state then
+_G.on = true
+
+while _G.on == true do
+    wait()
+
+wait(0.2)
+local args = {
+        [1] = "Rainbow Flag"
+    }
+    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+        local args = {
+        [1] = "Rainbow Flag"
     }
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 
