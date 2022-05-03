@@ -758,17 +758,3 @@ local Section = Tab:NewSection("Scipter:Teddy")
 local Section = Tab:NewSection("Designing:Chris")
 local Section = Tab:NewSection("Discord:https://discord.gg/az7vxnSB")
 local Section = Tab:NewSection("Popblox©2022")
-local Tab     = Window:NewTab("Safe place")
-local Section = Tab:NewSection("Auto on")
-Section:NewButton("safe place", "safe", function()
---SCRIPT MADE BY: The_KillerHood#6712, REMOVING CREDITS = BAN!
-getgenv().SPAWNPOINT = "On" -- Spawn Point: Off/On
-getgenv().CREDITS = [[
-
-SCRIPT MADE BY: The_KillerHood#6712
-THE SCRIPT IS FREE
-
-]]
-
-loadstring(game:HttpGet("https://thekillerhood.xyz/PopitScript/SAFEPLACE"))()
-end)
