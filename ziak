@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gotu656/Ziak/main/EZBOZO"))()
-local Window  = Library.CreateLib("Teddy Hub", "DarkTheme")
+local Window  = Library.CreateLib("Teddy Hub", "Serpent")
 local Tab     = Window:NewTab("Update")
 local Section = Tab:NewSection("Update")
 local Section = Tab:NewSection("New  safe place... is not ur all credits to nova safe place")
@@ -405,6 +405,19 @@ loadstring("\103\97\109\101\46\80\108\97\121\101\114\115\46\76\111\99\97\108\80\
 end)
 Section:NewButton("Popblox hub", "Others", function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tom13122331/LuaSource/main/Chris"),true))()
+end)
+local Section = Tab:NewSection("Safe place")
+Section:NewButton("be safe", "Help", function()
+--SCRIPT MADE BY: The_KillerHood#6712, REMOVING CREDITS = BAN!
+getgenv().SPAWNPOINT = "On" -- Spawn Point: Off/On
+getgenv().CREDITS = [[
+
+SCRIPT MADE BY: The_KillerHood#6712
+THE SCRIPT IS FREE
+
+]]
+
+loadstring(game:HttpGet("https://thekillerhood.xyz/PopitScript/SAFEPLACE"))()
 end)
 local Section = Tab:NewSection("Idk what is it")
 Section:NewButton("Tall script", "Help", function()
