@@ -1035,6 +1035,3 @@ elseif game.PlaceId == 3956818381 then
     local Section = Tab:NewSection("Prison Life")
     local Section = Tab:NewSection("Criminality")
 end
-else
-	game.Players.LocalPlayer:Kick("Game is not supported")
-end
