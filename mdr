@@ -1,4 +1,4 @@
--- Scripted By: mdrchuisfrancais#9925
+-- Scripted By: mdrchuisfrancais#9925 and teddy
 -- Design By: Chris
 -- Contributors: Teddy
 -- Supported Games: Pop It Trading;Secret Hatching Sim(1 & 2);Criminality;Ninja Legends;Prison Life
@@ -26,7 +26,7 @@ if game.PlaceId == 7346416636 then
 	print("Done!")
 
 	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gotu656/Ziak/main/EZBOZO"))()
-	local Window  = Library.CreateLib("Teddy Hub", "Serpent")
+	local Window  = Library.CreateLib("Teddy and mdr Hub", "Serpent")
 	local Tab     = Window:NewTab("Credits and Version")
 	local Section = Tab:NewSection("Version")
 	local Section = Tab:NewSection("Version 2 of Teddy Hub")
