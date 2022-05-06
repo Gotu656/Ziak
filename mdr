@@ -59,7 +59,7 @@ if game.PlaceId == 7346416636 then
 	local Section = Tab:NewSection("crystal")
 	local Section = Tab:NewSection("spooky21")
 	local Section = Tab:NewSection("eeek")
-	local Tab     = Window:NewSection("NFT")
+	local Tab     = Window:NewTab("NFT")
 	local Section = Tab:NewSection("NFT")
 
 	Section:NewButton("Buy Ben", "Buy Ben", function()
@@ -858,6 +858,7 @@ elseif game.PlaceId == 8150387499 then
 	local Tab     = Window:NewTab("Credits")
 	local Section = Tab:NewSection("Credits")
 	local Section = Tab:NewSection("Scipter:mdrchuisfrancais#9925")
+	local Section = Tab:NewSection("Scipter:and teddy x)")
 	local Section = Tab:NewSection("Designing:Chris")
 	local Section = Tab:NewSection("Discord:https://discord.gg/az7vxnSB")
 	local Section = Tab:NewSection("Popblox©2022") 
