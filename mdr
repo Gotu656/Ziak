@@ -853,6 +853,8 @@ elseif game.PlaceId == 8150387499 then
 	print("Checking if any anti-cheat what published")
 	wait(0.07)
 	print("Done!")
+	wait(0.01)
+	 print("Secret Hatching Sim")
 
 	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tom13122331/Hub/main/Hub"))()
 	local Window  = Library.CreateLib("Mdr's PopHub ", "Synapse")
@@ -899,6 +901,8 @@ elseif game.PlaceId == 155615604 then
     print("Checking if any anti-cheat what published")
     wait(0.07)
     print("Done!")
+    wait(0.01)
+    print("Prison life")
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Mdr's PopHub - Teddy Contribution", "Sentinel")
 
