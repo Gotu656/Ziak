@@ -1,4 +1,4 @@
--- Scripted By: mdrchuisfrancais#9925 and teddy
+-- Scripted By: mdrchuisfrancais#9925
 -- Design By: Chris
 -- Contributors: Teddy
 -- Supported Games: Pop It Trading;Secret Hatching Sim(1 & 2);Criminality;Ninja Legends;Prison Life
@@ -14,7 +14,7 @@ wait(.30)
 
 --[floppa] Pop It Trading ✨
 
-print("Pop It Trading ✨")
+
 
 if game.PlaceId == 7346416636 then
 	print("Opening Gui")
@@ -24,9 +24,11 @@ if game.PlaceId == 7346416636 then
 	print("Checking if any anti-cheat what published")
 	wait(0.07)
 	print("Done!")
+	wait(0.01)
+	print("Pop It Trading ✨")
 
 	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gotu656/Ziak/main/EZBOZO"))()
-	local Window  = Library.CreateLib("Teddy and mdr Hub", "Serpent")
+	local Window  = Library.CreateLib("Teddy Hub", "Serpent")
 	local Tab     = Window:NewTab("Credits and Version")
 	local Section = Tab:NewSection("Version")
 	local Section = Tab:NewSection("Version 2 of Teddy Hub")
@@ -419,6 +421,7 @@ if game.PlaceId == 7346416636 then
 	    local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
 	    Event:FireServer(A_1)
 	end)
+	local Tab     = Window:NewTab("Auto drop items")
 	local Section = Tab:NewSection("Auto Drop items")
 	Section:NewButton("Drop banana ", "Drop banana", function()
 	getgenv().item_name = "The banana" -- Change this to what you want to autodupe
@@ -440,8 +443,6 @@ if game.PlaceId == 7346416636 then
 	getgenv().item_name = "Mommeh Long Legs" -- Change this to what you want to autodupe
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/THEBESTHAGEG/LOLOLO/main/README.md'))()
 	end)
-
-	
 	local Tab     = Window:NewTab("Misc")
 	local Section = Tab:NewSection("Misc")
 	Section:NewKeybind("Close F open F", "Close F open F", Enum.KeyCode.F, function()
@@ -957,6 +958,8 @@ elseif game.PlaceId == 3956818381 then
     print("Checking if any anti-cheat what published")
     wait(0.07)
     print("Done!")
+    wait(0.01)
+    print("Ninja lengende")
 
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Mdr's PopHub x Teddy Hub", "DarkTheme")
