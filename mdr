@@ -26,8 +26,8 @@ if game.PlaceId == 7346416636 then
 	print("Done!")
 
 	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gotu656/Ziak/main/EZBOZO"))()
-	local Window  = Library.CreateLib("Mdr's PopHub - Teddy Hub", "Serpent")
-	local Tab     = Window:NewTab("Version")
+	local Window  = Library.CreateLib("Teddy Hub", "Serpent")
+	local Tab     = Window:NewTab("Credits and Version")
 	local Section = Tab:NewSection("Version")
 	local Section = Tab:NewSection("Version 2 of Teddy Hub")
 	local Section = Tab:NewSection("Credits")
@@ -419,7 +419,6 @@ if game.PlaceId == 7346416636 then
 	    local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
 	    Event:FireServer(A_1)
 	end)
-	local Tab     = Window:NewTab("Auto drop items")
 	local Section = Tab:NewSection("Auto Drop items")
 	Section:NewButton("Drop banana ", "Drop banana", function()
 	getgenv().item_name = "The banana" -- Change this to what you want to autodupe
@@ -441,6 +440,8 @@ if game.PlaceId == 7346416636 then
 	getgenv().item_name = "Mommeh Long Legs" -- Change this to what you want to autodupe
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/THEBESTHAGEG/LOLOLO/main/README.md'))()
 	end)
+
+	
 	local Tab     = Window:NewTab("Misc")
 	local Section = Tab:NewSection("Misc")
 	Section:NewKeybind("Close F open F", "Close F open F", Enum.KeyCode.F, function()
